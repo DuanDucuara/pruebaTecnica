@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Clientes</title>
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+</head>
+<body>
+	<div class=container>
+	<div class="col-md-4">
+		<h1>Clientes</h1>
+	</div>
+	 <div style="padding:0 20px">
+	<table class="table table-striped">
+			<tr>
+		    <th>Nombre</th>
+		    <th>Direccion</th>
+		    <th>Telefono</th>
+		    <th>Fecha de creacion</th>
+		</tr>  
+    	<tr th:each = "cliente : ${clientes}">
+    		<td th:text="${cliente.nombreCli}"></td>
+    		<td th:text="${cliente.direccionCli}"></td>
+    		<td th:text="${cliente.telefonoCli}"></td>
+    		<td th:text="${cliente.fechaCreacion}"></td>
+    	</tr>
+    </table>
+     </div>
+     <div>
+		<a href="/" class="btn btn-primary">inicio</a>
+	</div>
+</div>
+
+</body>
+</html>

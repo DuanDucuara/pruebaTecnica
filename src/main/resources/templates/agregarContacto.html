@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+<title>Agregar Contacto</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Nuevo Contacto</h1>
+		<div class="col-md-4">
+			<form th:object="${contacto}" th:action="@{save}" action="#"
+				method="post">
+				<input type="text" th:field="*{cliente}" class="form-control"
+					placeholder="cliente" />
+				<div style="clear: both; display: block; height: 10px;"></div> 
+				<input type="text" th:field="*{nombreCont}" class="form-control"
+					placeholder="Nombre" />
+				<div style="clear: both; display: block; height: 10px;"></div>
+				<input type="text" th:field="*{direccionCont}" class="form-control"
+					placeholder="direccion" />
+				<div style="clear: both; display: block; height: 10px;"></div>
+				<input type="text" th:field="*{telefonoCont}" class="form-control"
+					placeholder="Telefono" />
+				<div style="clear: both; display: block; height: 10px;"></div>
+				<input type="submit" class="btn btn-primary" value="agregar"></input>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

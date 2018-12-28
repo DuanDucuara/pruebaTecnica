@@ -1,0 +1,3 @@
+insert into cliente (id_cliente,nombre_cli,direccion_cli,telefono_cli,fecha_creacion) values(01,'Camilo','carrera 96','3193513672','2015-02-02');
+insert into cliente (id_cliente,nombre_cli,direccion_cli,telefono_cli,fecha_creacion) values(02,'Luciana','calle 127','3200323443','2018-02-02');
+insert into cliente (id_cliente,nombre_cli,direccion_cli,telefono_cli,fecha_creacion) values(03,'Daniel','cale 7','3003241987','2017-02-02');
